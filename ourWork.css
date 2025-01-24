@@ -1,0 +1,241 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #faf6f6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    transition: transform 0.7s ease-in-out;
+    background-color: #8fd964;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+
+
+/* Adjust body to account for fixed navbar 
+body {
+    padding-top: 80px;
+}*/
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #27ae60;
+}
+
+/* Our Work Hero Section */
+.ourwork_Hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/ourWork.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 300px 10px;
+    margin-top: 0;
+}
+
+.ourwork_Hero_content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ourwork_Hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.ourwork_Hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/*background Image*/
+#ourWork_2021 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/Honeybox.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#ourWork_2022 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/Transplatation.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#ourWork_2023 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/RetailShop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#ourWork_2024 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/HoneyPU.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Photo Sections */
+.photo-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.photo-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.photo-section h1 {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.styled-button {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+.styled-button1 {
+    display: inline-block;
+    background: linear-gradient(rgba(130, 249, 2, 0.473), rgba(245, 209, 6, 0.6));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer.contact {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer.contact h2 {
+    margin-bottom: 15px;
+    color: #27ae60;
+}
+
+footer.contact p {
+    margin-bottom: 10px;
+}
+
+footer.contact a {
+    color: #27ae60;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer.contact a:hover {
+    color: #2ecc71;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-text {
+        margin-top: 10px;
+    }
+}
