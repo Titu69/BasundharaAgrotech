@@ -208,7 +208,7 @@ footer.contact a {
     text-decoration: none;
 }
 
-/* Responsive Design */
+/* Responsive Design 
 @media screen and (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
@@ -235,5 +235,157 @@ footer.contact a {
     .cta-buttons {
         flex-direction: column;
         gap: 10px;
+    }
+}*/
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 120px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Scroll Page Sections */
+    .scroll-page {
+        padding: 40px 10px;
+    }
+
+    .scroll-page h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .scroll-page p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    /* Get Involved Section */
+    .get-involved {
+        padding: 30px 15px;
+    }
+
+    .form label {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .form input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .form button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer.contact {
+        padding: 20px 15px;
+    }
+
+    footer.contact h2 {
+        font-size: 1.5rem;
+    }
+
+    footer.contact p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Navbar */
+    .navbar .container {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .nav-links li {
+        margin: 8px 0;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-buttons a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Scroll Page Sections */
+    .scroll-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .scroll-page p {
+        font-size: 0.9rem;
+    }
+
+    /* Get Involved Section */
+    .form input {
+        font-size: 0.8rem;
+    }
+
+    .form button {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer.contact h2 {
+        font-size: 1.3rem;
+    }
+
+    footer.contact p {
+        font-size: 0.8rem;
     }
 }
