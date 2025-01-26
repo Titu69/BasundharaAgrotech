@@ -260,38 +260,61 @@ footer.contact a:hover {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1px 0; /* Smaller padding for a smaller navbar */
+    }
     .navbar .container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row; /* Ensure proper alignment on smaller screens */
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 30px; /* Smaller logo for mobile */
+    }
+    .logo-text {
+        font-size: .9rem; /* Reduced font size for logo text */
     }
 
     .nav-links {
-        margin-top: 15px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .logo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-text {
         margin-top: 10px;
-    }
-
-    .photo-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
-    .photo-card {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 20px;
+    .nav-links a {
+        font-size: small;
+    }
+
+    .about-us_Hero {
+        padding: 180px 5px;
+    }
+
+    .about-us_Hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .about-us_Hero p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .photo-section {
+        min-height: 50vh;
+    }
+
+    .photo-section h2 {
+        font-size: 1rem;
+    }
+
+    .photo-section p {
+        max-width: 90%;
+    }
+
+    footer.contact h2 {
+        font-size: 1.5rem;
     }
 }
