@@ -288,59 +288,69 @@ footer.contact a {
 
 @media screen and (max-width: 480px) {
     
+        
+    .navbar {
+        padding: 1px 0; /* Smaller padding for a smaller navbar */
+    }
     .navbar .container {
-        flex-direction: column; /* Ensure proper alignment on smaller screens */
+        flex-direction: row; /* Ensure proper alignment on smaller screens */
         align-items: center;
     }
-
     .logo img {
-        height: 40px;
+        height: 30px; /* Smaller logo for mobile */
     }
-
     .logo-text {
-        font-size: 1rem;
+        font-size: .9rem; /* Reduced font size for logo text */
     }
 
     .nav-links {
-        flex-direction: column; /* Stack navigation links vertically */
+        margin-top: 10px;
+        flex-direction: row;
         align-items: center;
-        margin-top: 10px; /* Add some spacing */
-    }
-
-    .nav-links li {
-        margin: 5px 0; /* Reduce spacing between links */
     }
 
     .nav-links a {
-        font-size: 0.9rem; /* Smaller font size for links */
+        font-size: small;
     }
 
     .hero {
-        margin-top: 70px; /* Adjust margin to account for the reduced navbar size */
+        padding: 180px 5px;
     }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .hero p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
-    .cta-buttons a {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .scroll-page {
+        min-height: 50vh;
     }
 
     .scroll-page h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .scroll-page p {
+        max-width: 90%;
     }
 
     .form input {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .form button {
+        font-size: 1rem;
     }
 
     footer.contact h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
