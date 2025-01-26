@@ -304,14 +304,116 @@ footer.contact a:hover {
 
     .photo-section {
         min-height: 50vh;
+        margin: 0px 0;
+        padding: 20px 20px;
+    }
+    
+    .photo-section h1 {
+        font-size: 1rem;
+        font-weight: 800;
     }
 
     .photo-section h2 {
-        font-size: 1rem;
+        font-size: .7rem;
     }
 
     .photo-section p {
         max-width: 90%;
+    }
+    .photo-container {
+        gap: 70px;
+        margin-top: 10px;
+    }
+
+    .photo-card {
+        width: 120px;
+        text-align: center;
+    }
+
+    .photo-card h1 {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+    footer.contact h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 1px 0; /* Smaller padding for a smaller navbar */
+    }
+    .navbar .container {
+        flex-direction: row; /* Ensure proper alignment on smaller screens */
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 30px; /* Smaller logo for mobile */
+    }
+    .logo-text {
+        font-size: .9rem; /* Reduced font size for logo text */
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: small;
+    }
+
+    .about-us_Hero {
+        padding: 180px 5px;
+    }
+
+    .about-us_Hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .about-us_Hero p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .photo-section {
+        min-height: 50vh;
+        margin: 0px 0;
+        padding: 20px 20px;
+    }
+    
+    .photo-section h1 {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .photo-section h2 {
+        font-size: .7rem;
+    }
+
+    .photo-section p {
+        max-width: 90%;
+    }
+    .photo-container {
+        gap: 70px;
+        margin-top: 10px;
+    }
+
+    .photo-card {
+        width: 120px;
+        text-align: center;
+    }
+
+    .photo-card h1 {
+        font-size: 0.8rem;
+        margin-top: 10px;
     }
 
     footer.contact h2 {
