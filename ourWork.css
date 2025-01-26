@@ -24,11 +24,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    background-color: #8fd964;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 15px 0;
-    transition: transform 0.7s ease-in-out;
-    background-color: #8fd964;
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
 }
 
 .navbar.hidden {
@@ -46,6 +46,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo {
@@ -215,27 +218,60 @@ footer.contact a:hover {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1px 0; /* Smaller padding for a smaller navbar */
+    }
     .navbar .container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row; /* Ensure proper alignment on smaller screens */
+        align-items: center;
+    }
+    .logo img {
+        height: 30px; /* Smaller logo for mobile */
+    }
+    .logo-text {
+        font-size: .9rem; /* Reduced font size for logo text */
     }
 
     .nav-links {
-        margin-top: 15px;
-        flex-direction: column;
+        margin-top: 1px;
+        flex-direction: row;
         align-items: center;
     }
 
-    .nav-links li {
-        margin: 10px 0;
+    .nav-links a {
+        font-size: small;
     }
 
-    .logo {
+    .ourwork_hero {
+        padding: 180px 5px;
+    }
+
+    .ourwork_hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .ourwork_hero p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
         flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
 
-    .logo-text {
-        margin-top: 10px;
+    .photo-section {
+        min-height: 50vh;
+    }
+
+    .sphoto-section h2 {
+        font-size: 1rem;
+    }
+
+    .photo-section p {
+        max-width: 90%;
+    }
+
+    footer.contact h2 {
+        font-size: 1.5rem;
     }
 }
