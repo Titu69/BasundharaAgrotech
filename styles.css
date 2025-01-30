@@ -97,6 +97,60 @@ body {
     transform: scale(1.05);
 }
 
+/* Newsfeed styling */
+.newsfeed {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    background: #f8f9fa;
+    text-align: center;
+    position: relative;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden; /* Hide default scrollbar */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+.news-item {
+    flex: 0 0 100%;
+    padding: 20px;
+    background: #ffbf00;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+/* Dots Navigation */
+.news-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.news-dots .dot {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.news-dots .dot.active {
+    background: #ffbf00;
+    width: 14px;
+    height: 14px;
+}
+
+
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/HoneyProduction1BG.jpg');
