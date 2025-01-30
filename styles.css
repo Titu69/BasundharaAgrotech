@@ -12,7 +12,10 @@ body {
     scroll-behavior: smooth;
 }
 
+
+
 /* Navbar Styles */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -41,6 +44,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo img {
@@ -52,6 +56,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -66,16 +71,35 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #2c3e50;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #27ae60;
+    transform: scale(1.1);
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #219150;
+    transform: scale(1.05);
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/HoneyProduction1BG.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/HoneyProduction1BG.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -104,23 +128,26 @@ body {
     gap: 20px;
 }
 
-.button, .btn {
+.button {
     display: inline-block;
-    padding: 12px 25px;
     background-color: #27ae60;
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color .8s ease;
 }
 
-.button:hover, .btn:hover {
+.button:hover {
     background-color: #2ecc71;
+    transform: scale(1.08);
 }
 
 /* Scroll Page Sections */
 .scroll-page {
-    min-height: 150vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,20 +159,20 @@ body {
 }
 
 #work {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/goal1.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/goal1.jpg');
+    background-size: contain;
     background-position: center;
 }
 
 #page2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/HoneyPU.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/HoneyPU.jpg');
+    background-size: contain;
     background-position: center;
 }
 
 #page3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/Honeybox.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/Honeybox.jpg');
+    background-size: contain;
     background-position: center;
 }
 
@@ -224,11 +251,11 @@ footer.contact a {
         padding: 1px 0; /* Smaller padding for a smaller navbar */
     }
     .navbar .container {
-        flex-direction: row; /* Ensure proper alignment on smaller screens */
+        flex-direction: column; /* Ensure proper alignment on smaller screens */
         align-items: center;
     }
     .logo img {
-        height: 30px; /* Smaller logo for mobile */
+        height: 40px; /* Smaller logo for mobile */
     }
     .logo-text {
         font-size: .9rem; /* Reduced font size for logo text */
@@ -236,12 +263,23 @@ footer.contact a {
 
     .nav-links {
         margin-top: 10px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
     .nav-links a {
         font-size: small;
+    }
+    .nav-button {
+        width: 100%; /* Make the button take full row width */
+        text-align: center; /* Center text inside the button */
+        padding: 3px 130px;
+        background-color: transparent; /* Transparent background */
+        color: white; /* Text color */
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
     }
 
     .hero {
@@ -288,7 +326,6 @@ footer.contact a {
 
 @media screen and (max-width: 480px) {
     
-        
     .navbar {
         padding: 1px 0; /* Smaller padding for a smaller navbar */
     }
