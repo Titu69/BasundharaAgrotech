@@ -154,6 +154,12 @@ body {
     position: relative;
 }
 
+.newsfeed h1{
+    color: #27ae60;
+    font-size: larger;
+    font-weight: 1000;
+}
+
 .news-container {
     display: flex;
     gap: 20px;
