@@ -24,11 +24,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 15px 0;
-    transition: transform 0.7s ease-in-out;
     background-color: #8fd964;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
 }
 
 .navbar.hidden {
@@ -39,11 +39,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo img {
@@ -55,6 +59,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -69,11 +74,30 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #2c3e50;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #27ae60;
+    transform: scale(1.1);
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #219150;
+    transform: scale(1.05);
 }
 
 /* About Us Hero Section */
@@ -118,45 +142,14 @@ body {
     border-radius: 5px;
     margin: 0 10px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color .8s ease;
 }
 
 .button:hover {
     background-color: #2ecc71;
+    transform: scale(1.08);
 }
 
-#Intro {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-    url('images/Aboutus1.jpg');
-    background-size: cover;
-    background-position: center;
-}
-#photo1 {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-    url('images/abouthus2.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-#photo2 {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-    url('images/abouthus3.jpg');
-    background-size: cover;
-    background-position: center;
-}
-#photoID {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-    url('images/mustardField');
-    background-size: cover;
-    background-position: center;
-}
-
-#OurGoal {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-    url('images/honey1\ -\ Copy.jpg');
-    background-size: cover;
-    background-position: center;
-}
 
 /* Photo Sections */
 .photo-section {
@@ -207,6 +200,41 @@ body {
     text-align: center;
 }
 
+#Intro {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/Aboutus1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#photo1 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/abouthus2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#photo2 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/abouthus3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#photoID {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/mustardField');
+    background-size: cover;
+    background-position: center;
+}
+
+#OurGoal {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('images/honey1\ -\ Copy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 /* Team Photo Container */
 .photo-container {
     display: flex;
@@ -220,6 +248,11 @@ body {
     width: 200px;
     text-align: center;
 }
+.photo-card:hover {
+    transform: scale(1.08) ;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
 
 .photo-card img {
     max-width: 100%;
@@ -264,12 +297,11 @@ footer.contact a:hover {
         padding: 1px 0; /* Smaller padding for a smaller navbar */
     }
     .navbar .container {
-        flex-direction: row; /* Ensure proper alignment on smaller screens */
+        flex-direction: column; /* Ensure proper alignment on smaller screens */
         align-items: center;
     }
-    
     .logo img {
-        height: 30px; /* Smaller logo for mobile */
+        height: 40px; /* Smaller logo for mobile */
     }
     .logo-text {
         font-size: .9rem; /* Reduced font size for logo text */
@@ -277,12 +309,23 @@ footer.contact a:hover {
 
     .nav-links {
         margin-top: 10px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
     .nav-links a {
         font-size: small;
+    }
+    .nav-button {
+        width: 100%; /* Make the button take full row width */
+        text-align: center; /* Center text inside the button */
+        padding: 3px 130px;
+        background-color: transparent; /* Transparent background */
+        color: white; /* Text color */
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
     }
 
     .about-us_Hero {
@@ -305,7 +348,7 @@ footer.contact a:hover {
     .photo-section {
         min-height: 50vh;
         margin: 0px 0;
-        padding: 20px 20px;
+        padding: 20px 40px;
     }
     
     .photo-section h1 {
@@ -323,6 +366,37 @@ footer.contact a:hover {
     .photo-container {
         gap: 70px;
         margin-top: 10px;
+    }
+
+    #OurGoal.photo-section {
+        padding: 3px 1px;
+
+    }
+
+    #OurGoal.photo-section h1 {
+        font-size: 20px;
+    }
+
+    #OurGoal.photo-section h2 {
+        font-size: 14px;
+        font-weight: normal;
+        color: #fff; /* Ensure visibility */
+        max-width: 80%; /* Increase width */
+        width: 80%;
+        margin: 0 auto 20px auto;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* Change grid to single column */
+    #OurGoal .photo-container {
+        grid-template-columns: 2fr;
+        gap: 5px;
+    }
+
+    #OurGoal .photo-card {
+        width: 40%;
+        margin: 0 auto;
     }
 
     .photo-card {
@@ -345,12 +419,11 @@ footer.contact a:hover {
         padding: 1px 0; /* Smaller padding for a smaller navbar */
     }
     .navbar .container {
-        flex-direction: row; /* Ensure proper alignment on smaller screens */
+        flex-direction: column; /* Ensure proper alignment on smaller screens */
         align-items: center;
     }
-    
     .logo img {
-        height: 30px; /* Smaller logo for mobile */
+        height: 40px; /* Smaller logo for mobile */
     }
     .logo-text {
         font-size: .9rem; /* Reduced font size for logo text */
@@ -358,12 +431,23 @@ footer.contact a:hover {
 
     .nav-links {
         margin-top: 10px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
     .nav-links a {
         font-size: small;
+    }
+    .nav-button {
+        width: 100%; /* Make the button take full row width */
+        text-align: center; /* Center text inside the button */
+        padding: 3px 130px;
+        background-color: transparent; /* Transparent background */
+        color: white; /* Text color */
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
     }
 
     .about-us_Hero {
@@ -386,7 +470,7 @@ footer.contact a:hover {
     .photo-section {
         min-height: 50vh;
         margin: 0px 0;
-        padding: 20px 20px;
+        padding: 20px 40px;
     }
     
     .photo-section h1 {
@@ -404,6 +488,37 @@ footer.contact a:hover {
     .photo-container {
         gap: 70px;
         margin-top: 10px;
+    }
+
+    #OurGoal.photo-section {
+        padding: 3px 1px;
+
+    }
+
+    #OurGoal.photo-section h1 {
+        font-size: 20px;
+    }
+
+    #OurGoal.photo-section h2 {
+        font-size: 14px;
+        font-weight: normal;
+        color: #fff; /* Ensure visibility */
+        max-width: 80%; /* Increase width */
+        width: 80%;
+        margin: 0 auto 20px auto;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* Change grid to single column */
+    #OurGoal .photo-container {
+        grid-template-columns: 2fr;
+        gap: 5px;
+    }
+
+    #OurGoal .photo-card {
+        width: 40%;
+        margin: 0 auto;
     }
 
     .photo-card {
