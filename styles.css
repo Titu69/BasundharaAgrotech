@@ -97,60 +97,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Newsfeed styling */
-.newsfeed {
-    width: 100%;
-    overflow: hidden;
-    padding: 20px;
-    background: #f8f9fa;
-    text-align: center;
-    position: relative;
-}
-
-.news-container {
-    display: flex;
-    gap: 20px;
-    overflow-x: hidden; /* Hide default scrollbar */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
-}
-
-.news-item {
-    flex: 0 0 100%;
-    padding: 20px;
-    background: #ffbf00;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    scroll-snap-align: center;
-}
-
-/* Dots Navigation */
-.news-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.news-dots .dot {
-    width: 12px;
-    height: 12px;
-    margin: 5px;
-    background: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.news-dots .dot.active {
-    background: #ffbf00;
-    width: 14px;
-    height: 14px;
-}
-
-
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/HoneyProduction1BG.jpg');
@@ -197,6 +143,70 @@ body {
 .button:hover {
     background-color: #2ecc71;
     transform: scale(1.08);
+}
+
+.newsfeed {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    background: #f8f9fa;
+    text-align: center;
+    position: relative;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden; /* Hide default scrollbar */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+.news-item {
+    flex: 0 0 100%;
+    padding: 20px;
+    background: #ffbf00;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.news-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.news-dots .dot {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.news-dots .dot.active {
+    background: #ffbf00;
+    width: 14px;
+    height: 14px;
+}
+
+/* Individual Sections */
+.section {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 2rem;
 }
 
 /* Scroll Page Sections */
@@ -384,11 +394,11 @@ footer.contact a {
         padding: 1px 0; /* Smaller padding for a smaller navbar */
     }
     .navbar .container {
-        flex-direction: column; /* Ensure proper alignment on smaller screens */
+        flex-direction: row; /* Ensure proper alignment on smaller screens */
         align-items: center;
     }
     .logo img {
-        height: 40px; /* Smaller logo for mobile */
+        height: 30px; /* Smaller logo for mobile */
     }
     .logo-text {
         font-size: .9rem; /* Reduced font size for logo text */
@@ -396,23 +406,12 @@ footer.contact a {
 
     .nav-links {
         margin-top: 10px;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
     .nav-links a {
         font-size: small;
-    }
-    .nav-button {
-        width: 100%; /* Make the button take full row width */
-        text-align: center; /* Center text inside the button */
-        padding: 3px 130px;
-        background-color: transparent; /* Transparent background */
-        color: white; /* Text color */
-        font-weight: bold;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
     }
 
     .hero {
