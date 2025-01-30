@@ -86,4 +86,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(autoScrollNews, 4000); // Auto-scroll every 4 seconds
 });
-
