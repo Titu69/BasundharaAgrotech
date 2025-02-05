@@ -104,7 +104,7 @@ body {
 .about-us_Hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/honey1.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-color: #f4f4f4;
     text-align: center;
@@ -203,33 +203,33 @@ body {
 #Intro {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/Aboutus1.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 #photo1 {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/abouthus2.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
 #photo2 {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/abouthus3.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 #photoID {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/mustardField');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
 #OurGoal {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/honey1\ -\ Copy.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
