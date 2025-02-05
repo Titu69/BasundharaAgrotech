@@ -100,7 +100,7 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/HoneyProduction1BG.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     color: white;
     text-align: center;
