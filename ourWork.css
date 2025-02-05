@@ -104,7 +104,7 @@ body {
 .ourwork_Hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/ourWork.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     color: white;
     text-align: center;
@@ -133,28 +133,28 @@ body {
 #ourWork_2021 {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/Honeybox.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
 #ourWork_2022 {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/Transplatation.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
 #ourWork_2023 {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/RetailShop.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
 #ourWork_2024 {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
     url('images/HoneyPU.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
